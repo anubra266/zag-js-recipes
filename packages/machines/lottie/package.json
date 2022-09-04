@@ -1,0 +1,50 @@
+{
+  "name": "@zag-js-recipes/lottie",
+  "version": "0.0.0",
+  "description": "Core logic for the lottie widget implemented as a state machine",
+  "keywords": [
+    "js",
+    "machine",
+    "xstate",
+    "statechart",
+    "component",
+    "anubra266",
+    "lottie"
+  ],
+  "author": "Abraham Aremu <anubra266@gmail.com>",
+  "homepage": "https://github.com/anubra266/zag-js-recipes#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "repository": "https://github.com/anubra266/zag-js-recipes/tree/main/packages/lottie",
+  "sideEffects": false,
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build-fast": "tsup src/index.ts --format=esm,cjs",
+    "start": "pnpm build --watch",
+    "build": "tsup src/index.ts --format=esm,cjs --dts",
+    "test": "jest --config ../../../jest.config.js --rootDir . --passWithNoTests",
+    "lint": "eslint src --ext .ts,.tsx",
+    "test-ci": "pnpm test --ci --runInBand",
+    "test-watch": "pnpm test --watch -u",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/anubra266/zag-js-recipes/issues"
+  },
+  "dependencies": {
+    "@lottiefiles/lottie-interactivity": "^1.6.1",
+    "@zag-js/core": "latest",
+    "@zag-js/types": "latest",
+    "lottie-web": "^5.9.4"
+  },
+  "devDependencies": {
+    "@zag-js/dom-utils": "latest"
+  }
+}

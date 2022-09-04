@@ -1,0 +1,30 @@
+{
+  "name": "solid-ts",
+  "version": "0.0.3",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "clean": "echo 'clean'",
+    "dev": "vite --port 3000",
+    "test-dev": "vite --port 3002 --clearScreen false",
+    "build": "vite build",
+    "serve": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/form-serialize": "0.7.2",
+    "vite": "3.0.1",
+    "vite-plugin-solid": "2.3.0"
+  },
+  "dependencies": {
+    "@zag-js/core": "latest",
+    "@zag-js-recipes/lottie": "workspace:*",
+    "@zag-js/solid": "latest",
+    "@zag-js/dom-utils": "latest",
+    "@zag-js-recipes/shared": "latest",
+    "form-serialize": "0.7.2",
+    "solid-app-router": "0.4.2",
+    "solid-js": "1.4.8"
+  }
+}

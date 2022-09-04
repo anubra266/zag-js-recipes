@@ -1,0 +1,35 @@
+{
+  "name": "next-ts",
+  "version": "0.0.15",
+  "private": true,
+  "scripts": {
+    "clean": "echo clean",
+    "dev": "next",
+    "test-dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@zag-js-recipes/lottie": "workspace:*",
+    "@zag-js/react": "latest",
+    "@zag-js/core": "latest",
+    "@zag-js/dom-utils": "latest",
+    "@zag-js-recipes/shared": "latest",
+    "form-serialize": "0.7.2",
+    "next": "12.2.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-spinners": "0.13.3"
+  },
+  "devDependencies": {
+    "@types/form-serialize": "0.7.2",
+    "@types/node": "18.0.6",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "eslint-plugin-react": "7.30.1",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "typescript": "4.7.4"
+  },
+  "license": "MIT"
+}

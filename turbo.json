@@ -1,0 +1,18 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "baseBranch": "origin/main",
+  "pipeline": {
+    "build": {
+      "outputs": ["dist/**", "node_modules/.cache/.tsbuildinfo"],
+      "dependsOn": ["^build"]
+    },
+    "build-fast": {
+      "outputs": ["dist/**"]
+    },
+    "typecheck": {
+      "outputs": ["node_modules/.cache/.tsbuildinfo"],
+      "dependsOn": ["^typecheck"]
+    }
+  },
+  "globalDependencies": ["tsconfig.json"]
+}
