@@ -1,6 +1,7 @@
 # Zag JS Recipes
 
-Custom Machines for Zag JS
+Custom Machines for [Zag JS](https://zagjs.com/). 
+Visit [zagjs.com](https://zagjs.com/) for full usage guide and more information.
 
 ### Available Machines
 
