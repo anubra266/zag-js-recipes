@@ -28,18 +28,18 @@ For framework specific solutions, we provide simple wrappers to help you consume
 ### Usage
 
 ```jsx
-import * as toggle from "@zag-js-recipes/lottie";
+import * as lottie from "@zag-js-recipes/lottie";
 import { normalizeProps, useMachine } from "@zag-js/react";
 
 function Example() {
   // if you need access to `state` or `send` from machine
-  const [state, send] = useMachine(toggle.machine({ id: "2" }));
+  const [state, send] = useMachine(lottie.machine({ id: "2" }));
 
   // convert machine details into `DOM` props
-  const api = toggle.connect(state, send, normalizeProps);
+  const api = lottie.connect(state, send, normalizeProps);
 
   // consume into components
-  return <button {...api.buttonProps}>Toggle me</button>;
+  return <div {...api.lottieProps} />
 }
 ```
 
