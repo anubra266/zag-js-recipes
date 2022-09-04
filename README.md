@@ -1,28 +1,10 @@
-# Zag
+# Zag JS Recipes
 
-Finite state machines for accessible JavaScript components
+Custom Machines for Zag JS
 
-- **Write once, use everywhere 🦄**: The component interactions are modelled in a framework agnostic way. We provide
-  adapters for JS frameworks like React, Solid, or Vue.
-- **Focus on accessibility ♿️**: Zag is built with accessibility in mind. We handle many details related to keyboard
-  interactions, focus management, aria roles and attributes.
-- **Headless ✨**: The machine APIs are completely unstyled and gives you the control to use any styling solution you
-  prefer.
-- **Powered by state machines 🌳**: Zag is built on top of the latest ideas in Statecharts. We don't follow the SCXML
-  specifications, but we've created an API that we think will help us build more complex components fast.
+### Available Machines
 
-## The problem
-
-With the rise of design systems and component-driven development, there's an endless re-implementation of common
-component patterns (Tabs, Menu, Modal, etc.) in multiple frameworks.
-
-Most of these implementations seem to be fairly similar in spirit, the differences being around the reactivity and
-effects systems for the framework (e.g. `useState`, `useEffect` in React.js). Framework specific solutions tend to grow
-in complexity over time and often become hard to understand, debug, improve or test.
-
-## Solution
-
-**Zag** is a JavaScript API that implements common component patterns using the state machine methodology.
+- Lottie
 
 ### Installation
 
