@@ -1,19 +1,19 @@
-import * as lottie from "@zag-js-recipes/lottie"
-import { useMachine, normalizeProps } from "@zag-js/react"
-import { lottieData } from "@zag-js-recipes/shared"
-import { useId } from "react"
-import { StateVisualizer } from "../components/state-visualizer"
-import { Toolbar } from "../components/toolbar"
+import * as lottie from "@zag-js-recipes/lottie";
+import { useMachine, normalizeProps } from "@zag-js/react";
+import { lottieData } from "@zag-js-recipes/shared";
+import { useId } from "react";
+import { StateVisualizer } from "../components/state-visualizer";
+import { Toolbar } from "../components/toolbar";
 
 export default function Page() {
   const [state, send] = useMachine(
     lottie.machine({
       id: useId(),
       animationData: lottieData,
-    }),
-  )
+    })
+  );
 
-  const api = lottie.connect(state, send, normalizeProps)
+  const api = lottie.connect(state, send, normalizeProps);
 
   return (
     <>
@@ -29,5 +29,5 @@ export default function Page() {
         <StateVisualizer state={state} />
       </Toolbar>
     </>
-  )
+  );
 }
