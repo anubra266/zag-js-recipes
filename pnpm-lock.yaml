@@ -4,7 +4,7 @@ importers:
 
   .:
     specifiers:
-      '@axe-core/playwright': 4.4.3
+      '@axe-core/playwright': 4.7.3
       '@babel/generator': 7.18.13
       '@babel/parser': 7.18.13
       '@babel/traverse': 7.18.13
@@ -43,7 +43,7 @@ importers:
       turbo: 1.4.3
       typescript: 4.7.4
     dependencies:
-      '@axe-core/playwright': 4.4.3
+      '@axe-core/playwright': 4.7.3
       '@babel/generator': 7.18.13
       '@babel/parser': 7.18.13
       '@babel/traverse': 7.18.13
@@ -104,9 +104,9 @@ importers:
     dependencies:
       '@zag-js-recipes/lottie': link:../../packages/machines/lottie
       '@zag-js-recipes/shared': link:../../shared
-      '@zag-js/core': 0.1.10
-      '@zag-js/dom-utils': 0.1.11
-      '@zag-js/react': 0.1.16_react@18.2.0
+      '@zag-js/core': 0.21.0
+      '@zag-js/dom-utils': 0.2.4
+      '@zag-js/react': 0.21.0_react-dom@18.2.0+react@18.2.0
       form-serialize: 0.7.2
       next: 12.2.2_react-dom@18.2.0+react@18.2.0
       react: 18.2.0
@@ -137,9 +137,9 @@ importers:
     dependencies:
       '@zag-js-recipes/lottie': link:../../packages/machines/lottie
       '@zag-js-recipes/shared': link:../../shared
-      '@zag-js/core': 0.1.10
-      '@zag-js/dom-utils': 0.1.11
-      '@zag-js/solid': 0.1.15_solid-js@1.4.8
+      '@zag-js/core': 0.21.0
+      '@zag-js/dom-utils': 0.2.4
+      '@zag-js/solid': 0.21.0_solid-js@1.4.8
       form-serialize: 0.7.2
       solid-app-router: 0.4.2_solid-js@1.4.8
       solid-js: 1.4.8
@@ -175,9 +175,9 @@ importers:
     dependencies:
       '@zag-js-recipes/lottie': link:../../packages/machines/lottie
       '@zag-js-recipes/shared': link:../../shared
-      '@zag-js/core': 0.1.10
-      '@zag-js/dom-utils': 0.1.11
-      '@zag-js/vue': 0.1.14_vue@3.2.37
+      '@zag-js/core': 0.21.0
+      '@zag-js/dom-utils': 0.2.4
+      '@zag-js/vue': 0.21.0_vue@3.2.37
       epic-spinners: 1.1.0_vue@3.2.37
       form-serialize: 0.7.2
       vite: 3.0.1
@@ -206,11 +206,11 @@ importers:
       lottie-web: ^5.9.4
     dependencies:
       '@lottiefiles/lottie-interactivity': 1.6.1
-      '@zag-js/core': 0.1.10
-      '@zag-js/types': 0.2.5
+      '@zag-js/core': 0.21.0
+      '@zag-js/types': 0.21.0
       lottie-web: 5.9.6
     devDependencies:
-      '@zag-js/dom-utils': 0.1.11
+      '@zag-js/dom-utils': 0.2.4
 
   shared:
     specifiers: {}
@@ -224,11 +224,12 @@ packages:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.15
 
-  /@axe-core/playwright/4.4.3:
-    resolution: {integrity: sha512-5H1uebutjeS8zV0klAifAsFxIOdAAF8AAGzfnC1twFY1h74TVISTDOtb+qyDzjjW3YAFd3FEbbasqS6ULcdkcQ==}
+  /@axe-core/playwright/4.7.3:
+    resolution: {integrity: sha512-v2PRgAyGvop7bamrTpNJtc5b1R7giAPnMzZXrS/VDZBCY5+uwVYtCNgDvBsqp5P1QMZxUMoBN+CERJUTMjFN0A==}
+    peerDependencies:
+      playwright-core: '>= 1.0.0'
     dependencies:
-      axe-core: 4.4.3
-      playwright: 1.25.0
+      axe-core: 4.8.2
     dev: false
 
   /@babel/code-frame/7.18.6:
@@ -2766,62 +2767,69 @@ packages:
       '@types/node': 18.0.6
     dev: true
 
-  /@zag-js/core/0.1.10:
-    resolution: {integrity: sha512-lsJet2ZmTsBlDaMfCJoP0vrhDnn/vqC5NFTuTZ3f+AWwZn/VECXf9yoETGQpB0H74Y2yI2N8etL3NIH0r7kvCA==}
+  /@zag-js/core/0.21.0:
+    resolution: {integrity: sha512-YPGPBpOExfsIM07w99115mHjiTsTxbTJLS8KW27A4AVXuyW2366Vfgxux5qmfbtDGzv7Y7pF0PfoCUi9CM4UnA==}
     dependencies:
-      '@zag-js/store': 0.1.2
-      klona: 2.0.5
+      '@zag-js/store': 0.21.0
+      klona: 2.0.6
     dev: false
 
-  /@zag-js/dom-utils/0.1.11:
-    resolution: {integrity: sha512-lZgRExFduaqdLzvfLx4i7KIzRnP9c8oK4LYsIJtzjv2/hzc50fwQdFK5wyP0o3xL7uGGmJXBKF4RdLx3qHmTsw==}
+  /@zag-js/dom-utils/0.2.4:
+    resolution: {integrity: sha512-GSGZWZMOyed2rzyZLmnM6/B8L7FH2z2cAU6F2zP4MzaIFkVOSN/M8fHjvKfmfVpn0tZEyD3iZABsUMv6J22RPw==}
     dependencies:
-      '@zag-js/types': 0.2.5
+      '@zag-js/types': 0.3.4
 
-  /@zag-js/react/0.1.16_react@18.2.0:
-    resolution: {integrity: sha512-qK01vagPk9ZXDu0AhLIPelehFJ0UmvgEQUL9bO/lEHppKEIoO0EiJTKKhjGjzOtaRahK4WmJ9bPsRdklv9ta1Q==}
+  /@zag-js/react/0.21.0_react-dom@18.2.0+react@18.2.0:
+    resolution: {integrity: sha512-/xaOS7xzig3OoZreKa93Bj1TOLEBTdkqk8SBH5hWkW/at4GlTJt9QXYPDh52j67BcTgOJB/574F6SCUDjLazKA==}
     peerDependencies:
-      react: '>=16.8.6'
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
     dependencies:
-      '@zag-js/core': 0.1.10
-      '@zag-js/store': 0.1.2
-      '@zag-js/types': 0.2.5
-      proxy-compare: 2.3.0
+      '@zag-js/core': 0.21.0
+      '@zag-js/store': 0.21.0
+      '@zag-js/types': 0.21.0
+      proxy-compare: 2.5.1
       react: 18.2.0
-      use-sync-external-store: 1.2.0_react@18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@zag-js/solid/0.1.15_solid-js@1.4.8:
-    resolution: {integrity: sha512-GSl8o3rKu4Y/dp0taBK+c02ArwgqBPUYSTiUGR4azIqrweFHwhtKeY6ai0KIe7LCEPDIx7ltSC239ZpuhvBpFQ==}
+  /@zag-js/solid/0.21.0_solid-js@1.4.8:
+    resolution: {integrity: sha512-phHmRQu4TVaJzHpTU07j2P0M/V5IBZ39m4u4fAVUvbanlihIoD1o9g6lcGFVBm972l/Oly42nGqbXT3QZYfgCg==}
     peerDependencies:
       solid-js: '>=1.1.3'
     dependencies:
-      '@zag-js/core': 0.1.10
-      '@zag-js/store': 0.1.2
-      '@zag-js/types': 0.2.5
+      '@zag-js/core': 0.21.0
+      '@zag-js/store': 0.21.0
+      '@zag-js/types': 0.21.0
       hyphenate-style-name: 1.0.4
       solid-js: 1.4.8
     dev: false
 
-  /@zag-js/store/0.1.2:
-    resolution: {integrity: sha512-ya9zb2mpqXaLwCYaIC536sUapIFlLNWEpR5MuIa4h2mvktTVDdG0AQTD4GsQij/6lgAmVE/qvqpMRaeI4zfkRQ==}
+  /@zag-js/store/0.21.0:
+    resolution: {integrity: sha512-uiECn/9cMJvX1EopTTm64/wN0R8JY4DakFFMG1wdaZEBA7CnfDbb1MQp6XY9+RkZhcGrAy8oLtW2NGlWACQwqg==}
     dependencies:
-      proxy-compare: 2.3.0
+      proxy-compare: 2.5.1
     dev: false
 
-  /@zag-js/types/0.2.5:
-    resolution: {integrity: sha512-T2Vrwm7maw8JtB2OyeDUagc/R87pL79t0aiYSEQBb3UKjnuXDOlcM06ubecPMINxiMIGueKNUbTdsXZ4rWf16Q==}
+  /@zag-js/types/0.21.0:
+    resolution: {integrity: sha512-ICW/e+SsmEokX9j8E5jDGRPxQCVdWZo687gWw9kxBV5aggc4leJLxvezjisLlbUpNK0j2KZws5HR+TPvygW16Q==}
     dependencies:
-      csstype: 3.1.0
+      csstype: 3.1.2
+    dev: false
 
-  /@zag-js/vue/0.1.14_vue@3.2.37:
-    resolution: {integrity: sha512-t54vB6BxeEYatpxRLk+kXypyLDnoUbwBzMeplZ4gGdAF+0FAJNvhpd9CV/ViykqLXCYUDdi1K8/BYxYdirtFPA==}
+  /@zag-js/types/0.3.4:
+    resolution: {integrity: sha512-KkZOMNqFZA0TaVF70O6WIRJPWTcDyRQjhXLDkLVfo99gwJdsC1bMZWfjrCiR8g1CfzvCyGNSWzdArIgzTJVEMA==}
+    dependencies:
+      csstype: 3.1.1
+
+  /@zag-js/vue/0.21.0_vue@3.2.37:
+    resolution: {integrity: sha512-4YiDLXk6bcqXrfxAuvSQmNICpapTsAfeXhi/R1pxmqTVgRMkPl8GInMukOAFx3j6LClS1WxP1sMdd5drsEZgow==}
     peerDependencies:
       vue: '>=3.0.0'
     dependencies:
-      '@zag-js/core': 0.1.10
-      '@zag-js/store': 0.1.2
-      '@zag-js/types': 0.2.5
+      '@zag-js/core': 0.21.0
+      '@zag-js/store': 0.21.0
+      '@zag-js/types': 0.21.0
       vue: 3.2.37
     dev: false
 
@@ -3010,6 +3018,11 @@ packages:
 
   /axe-core/4.4.3:
     resolution: {integrity: sha512-32+ub6kkdhhWick/UjvEwRchgoetXqTK14INLqbGm5U2TzBkBNF3nQtLYm8ovxSkQWArjEQvftCKryjZaATu3w==}
+    engines: {node: '>=4'}
+    dev: false
+
+  /axe-core/4.8.2:
+    resolution: {integrity: sha512-/dlp0fxyM3R8YW7MFzaHWXrf4zzbr0vaYb23VBFCl83R7nWNPg/yaQw2Dc8jzCMmDVLhSdzH8MjrsuIUuvX+6g==}
     engines: {node: '>=4'}
     dev: false
 
@@ -3587,6 +3600,14 @@ packages:
 
   /csstype/3.1.0:
     resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
+    dev: true
+
+  /csstype/3.1.1:
+    resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
+
+  /csstype/3.1.2:
+    resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
+    dev: false
 
   /csv-generate/3.4.3:
     resolution: {integrity: sha512-w/T+rqR0vwvHqWs/1ZyMDWtHHSJaN06klRqJXBEpDJaM/+dZkso0OKh1VcuuYvK3XM53KysVNq8Ko/epCK8wOw==}
@@ -6150,8 +6171,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /klona/2.0.5:
-    resolution: {integrity: sha512-pJiBpiXMbt7dkzXe8Ghj/u4FfXOOa98fPW+bihOJ4SjnoijweJrNThJfd3ifXpXhREjpoF2mZVH1GfS9LV3kHQ==}
+  /klona/2.0.6:
+    resolution: {integrity: sha512-dhG34DXATL5hSxJbIexCft8FChFXtmskoZYnoPWjXQuebWYCNkVeV3KkGegCK9CP1oswI/vQibS2GY7Em/sJJA==}
     engines: {node: '>= 8'}
     dev: false
 
@@ -7172,8 +7193,8 @@ packages:
       react-is: 16.13.1
     dev: true
 
-  /proxy-compare/2.3.0:
-    resolution: {integrity: sha512-c3L2CcAi7f7pvlD0D7xsF+2CQIW8C3HaYx2Pfgq8eA4HAl3GAH6/dVYsyBbYF/0XJs2ziGLrzmz5fmzPm6A0pQ==}
+  /proxy-compare/2.5.1:
+    resolution: {integrity: sha512-oyfc0Tx87Cpwva5ZXezSp5V9vht1c7dZBhvuV/y3ctkgMVUmiAGDVeeB0dKhGSyT0v1ZTEQYpe/RXlBVBNuCLA==}
     dev: false
 
   /ps-tree/1.2.0:
@@ -8378,14 +8399,6 @@ packages:
 
   /use-sync-external-store/1.1.0_react@18.2.0:
     resolution: {integrity: sha512-SEnieB2FPKEVne66NpXPd1Np4R1lTNKfjuy3XdIoPQKYBAFdzbzSZlSn1KJZUiihQLQC5Znot4SBz1EOTBwQAQ==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    dependencies:
-      react: 18.2.0
-    dev: false
-
-  /use-sync-external-store/1.2.0_react@18.2.0:
-    resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
